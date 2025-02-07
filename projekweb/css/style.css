@@ -1,0 +1,306 @@
+ :root {
+    --primary: #0db841; 
+    --background: #141313;
+ }
+
+ *{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+ }
+
+ html{
+   scroll-behavior: smooth;
+ }
+
+ body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background);
+    color: #ffffff;
+ } 
+
+
+ /* Navbar */
+ .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(1, 1, 1, 0.8);
+    border-bottom: 1px solid  #0db841;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+ }
+
+ .navbar .navbar-logo{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    font-style: italic;
+ }
+
+ .navbar .navbar-logo span {
+   color: #0db841 ;
+ }
+
+ .navbar .navbar-nav a{
+   color: #f5f9f6;
+   display: inline-block;
+   font-size: 1rem;
+   margin: 0 1rem;
+ }
+
+ .navbar .navbar-nav a:hover{
+   color: var(--primary);
+ }
+
+ /* Hero Section */
+ .hero {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   background-image: url('../foto/tentang\ kami.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   position: relative;
+ }
+ .hero::after {
+   content: '';
+   display: block;
+   position: absolute; 
+   width: 100%;
+   height: 30%;
+   bottom: 0;
+   background: linear-gradient(0deg, rgba(1,1,3,1) 8%, rgba(255,255,255,0) 50%);
+
+ }
+  
+   .hero .content {
+      padding: 1.4rem 7% ;
+      max-width: 60rem;
+   }
+
+   .hero .content h1{
+      font-size: 3em;
+      
+      text-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+      line-height: 1.3;
+   }
+   .hero .content p {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+      line-height: 1.2rem;
+      font-weight: 50;
+      font-style: italic;
+    
+   }
+   .hero .content .cta {
+      margin-top: 1rem;
+      display: inline-block;
+      padding: 1rem 3rem;
+      font-size: 0.8rem;
+      color: #0c0c0c;
+      background-color: var(--primary);
+      border-radius: 0.5rem;
+      box-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+   }
+    
+      /* About Section*/
+      .about, 
+      .pemesanan, 
+      .contact{
+         padding: 6rem 7% 1.4rem;
+      }
+
+      .about h3, p,
+      .pemesanan p,
+      .contact p{
+         font-style: italic;
+      }
+
+      .about h2, 
+      .pemesanan h2, 
+      .contact h2{
+         text-align: center;
+         font-size: 2rem;
+         margin-bottom: 3rem;
+      }
+      .about h2 span, 
+      .pemesanan h2 span, 
+      .contact h2 span {
+         color: #0db841;
+      }
+      
+      .about .row{
+         display: flex;
+      }
+      
+      .about .row .about-img{
+         flex: 1 1 20rem;
+      }
+       
+      .about .row .about-img img{
+         width: 100%;
+         border-radius: 10%;
+      }
+
+      .about .row .content{
+         flex: 1 1 35rem;
+         padding: 0 1rem;
+      }
+
+      .about .row .content h3{
+         font-size: 1.8rem;
+         margin-bottom: 1rem;
+      }
+
+      .about .row .content p {
+         margin-bottom: 0.8rem;
+         font-size: 1rem;
+         font-weight: 100;
+         line-height: 1.6;
+      }
+
+      /* pemesanan section */
+      .pemesanan h2, .contact h2{
+         margin-bottom: 0rem;
+      }
+
+      .pemesanan p, .contact p{
+         text-align: center;
+         font-size: 0.8rem;
+         font-weight: 100;
+         line-height: 1.6;
+      } 
+
+      .pemesanan .row{
+         display: flex;
+        
+         margin-top: 1rem;
+         justify-content: center;
+      }
+
+      .pemesanan .row .pemesanan-card {
+         text-align: center;
+      }
+
+      .pemesanan .row .pemesanan-card img{
+         border-radius: 25%;
+         width: 50%;
+         
+      }
+
+      .pemesanan .row .pemesanan-card .pemesanan-card-title{
+         margin: 0.5em auto 0.5rem;
+         font-size: 0rem;
+      }
+      .pemesanan .row .pemesanan-card .pemesanan-card-price{
+         font-size: 0rem;
+      }
+      .pemesanan .cta{
+      margin-top: 0rem;
+      margin-left: 50rem;
+      display: inline-block;
+      padding: 1rem 3rem;
+      font-size: 0.8rem;
+      color: #0c0c0c;
+      background-color: var(--primary);
+      border-radius: 0.5rem;
+      box-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+      }
+      
+
+   /* contact section */
+      .contact .row{
+         display: flex;
+         margin-top: 2rem;
+         background-color: var(--background);
+      }
+
+      .contact .row .map{
+         flex: 1 1 45rem;
+         width: 100%;
+         object-fit: cover;
+         height: 25rem;
+         border-radius: 10%;
+      }
+
+      .contact .row form{
+         flex: 1 1 45rem;
+         padding: 1rem 5rem;
+         text-align: center;
+      }
+
+      .contact .row .input-group{
+         display: flex;
+         align-items: center;
+         margin-top: 2rem;
+         background-color: var(--background);
+         border: 1px solid #eee;
+         padding-left: 0.5rem;
+      }
+
+      .contact .row form .input-group input{
+         width: 100%;
+         padding: 1.5rem;
+         font-size: 1rem;
+         background: none;
+         color: #fff;
+      }
+
+      .contact .row form .btn{
+         margin-top: 1.5rem;
+         display: inline-block;
+         padding: 0.5rem 1.5rem;
+         font-size: 1rem;
+         color: #fff;
+         background-color: var(--primary);
+         cursor: pointer;
+      }
+
+      /* footer */
+
+      footer{
+         background-color: var(--primary);
+         text-align: center;
+         padding: 1rem 0 1rem;
+         margin-top: 1rem;
+      }
+
+
+      footer .links a:hover{
+         color: var(--background);
+      }
+
+      footer .links{
+         margin-top: 0.2rem;
+      }
+
+      footer .links a{
+         color: #fff;
+         padding: 0.2rem 1rem;
+      }
+
+      footer .creadit{
+         font-size: 0.5rem;
+      }
+      footer .credit a{
+         color: var(--background);
+      }
+      
+      footer .credit p{
+         font-size: 0.7rem;
+         margin-top: 1rem;
+      }
+
+
+
+
+
+
